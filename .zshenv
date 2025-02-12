@@ -8,15 +8,15 @@
 #################################################################
 
 #export TERM='rxvt-256color'
-export DOTFILES="$HOME/.dotfiles"
+#export DOTFILES="$HOME/.dotfiles"
 export WORKSPACE="$HOME/learn"
 
-[ -f "$DOTFILES/install_config" ] && source "$DOTFILES/install_config"
+#[ -f "$DOTFILES/install_config" ] && source "$DOTFILES/install_config"
 
 # XDG
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
-export XDG_CACHE_HOME=$HOME/cache
+export XDG_CACHE_HOME=$HOME/.cache
 
 # editor
 export EDITOR="nvim"
@@ -66,7 +66,7 @@ export FZF_COMPLETION_DIR_COMMANDS="cd pushd rmdir tree ls"
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
 
 # git
-export GIT_REVIEW_BASE=master # See gitconfig
+export GIT_REVIEW_BASE=main # See gitconfig
 
 export NVM_DIR="$HOME/.nvm"
 
