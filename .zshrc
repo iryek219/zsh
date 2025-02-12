@@ -36,3 +36,5 @@ exercism () {
 # This section can be safely removed at any time if needed.
 test -r '/home/hwan/.opam/opam-init/init.sh' && . '/home/hwan/.opam/opam-init/init.sh' > /dev/null 2> /dev/null || true
 # END opam configuration
+
+eval "$(zoxide init zsh)"
