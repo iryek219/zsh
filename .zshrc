@@ -38,3 +38,5 @@ test -r '/home/hwan/.opam/opam-init/init.sh' && . '/home/hwan/.opam/opam-init/in
 # END opam configuration
 
 eval "$(zoxide init zsh)"
+
+[ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh
