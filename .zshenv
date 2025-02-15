@@ -79,6 +79,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Rust
+export RUSTUP_HOME="$HOME/.local/share/rust/rustup"
+export CARGO_HOME="$HOME/.local/share/rust/cargo"
+source "$HOME/.local/share/rust/cargo/env"
+
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export PATH="$PATH:/home/hwan/go/bin:/usr/local/go/bin"
 export PATH="$PATH:/home/hwan/learn/roc/roc_nightly-linux_x86_64-2025-01-07-a089cf2"
