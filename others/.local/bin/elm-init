@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Install elm-tooling as a development dependency
+npm install --save-dev elm-tooling
+
+# Initialize elm-tooling
+npx elm-tooling init
+
+# Install npm packages
+npm install
+
