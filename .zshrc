@@ -17,7 +17,6 @@ if [ -e /home/hwan/.nix-profile/etc/profile.d/nix.sh ]; then . /home/hwan/.nix-p
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-[ -f "/home/hwan/.ghcup/env" ] && . "/home/hwan/.ghcup/env" # ghcup-env
 
 # Exercism function compatible with zsh
 exercism () {
@@ -40,3 +39,25 @@ test -r '/home/hwan/.opam/opam-init/init.sh' && . '/home/hwan/.opam/opam-init/in
 eval "$(zoxide init zsh)"
 
 [ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh
+
+[ -f "/home/hwan/.ghcup/env" ] && . "/home/hwan/.ghcup/env" # ghcup-env
+
+
+. "$HOME/.local/share/../bin/env"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/hwan/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/hwan/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/hwan/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/hwan/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+ source ~/.venv/bin/activate 

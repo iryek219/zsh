@@ -27,6 +27,12 @@ alias la='ls -A'
 alias lc='ls -CF'
 
 # +------+
+# | vi   |
+# +------+
+alias vi='/usr/bin/vim'
+alias vim='nvim'
+
+# +------+
 # | wget |
 # +------+
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
